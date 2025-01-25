@@ -1,0 +1,40 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="24" y="16" width="80" height="96" rx="8" fill="#ffffff" stroke="#2196f3" stroke-width="6"/>
+  
+  <!-- Browser top bar -->
+  <rect x="24" y="16" width="80" height="20" rx="8" fill="#2196f3"/>
+  
+  <!-- Browser buttons -->
+  <circle cx="36" cy="26" r="4" fill="#ffffff"/>
+  <circle cx="48" cy="26" r="4" fill="#ffffff"/>
+  <circle cx="60" cy="26" r="4" fill="#ffffff"/>
+  
+  <!-- Content lines being wiped -->
+  <g transform="rotate(-45, 64, 64)">
+    <!-- Static content lines -->
+    <rect x="34" y="46" width="60" height="4" rx="2" fill="#e0e0e0"/>
+    <rect x="34" y="58" width="50" height="4" rx="2" fill="#e0e0e0"/>
+    <rect x="34" y="70" width="55" height="4" rx="2" fill="#e0e0e0"/>
+    
+    <!-- Wipe animation effect -->
+    <rect x="24" y="40" width="16" height="60" fill="#2196f3" opacity="0.3">
+      <animate
+        attributeName="x"
+        from="24"
+        to="88"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Eraser effect -->
+    <rect x="24" y="40" width="8" height="60" fill="#2196f3">
+      <animate
+        attributeName="x"
+        from="24"
+        to="88"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg> 
