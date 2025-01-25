@@ -1,21 +1,29 @@
-# Clear Local Storage - Chrome Extension
+# Clear Local Storage - Chrome Extension 🧹
 
-A Chrome extension that helps you quickly clear various types of browser storage for the current tab. Super helpful for testing and debugging during development. Inspired by my constant need to clear local storage when working with GDPR compliance, consent management, and cookies.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-blue)](https://chrome.google.com/webstore/detail/[extension-id])
+[![Tests](https://img.shields.io/badge/Tests-Jest-green)](https://github.com/KevinOBytes/clearlocal-chrome/tree/main/tests)
 
-## Features
+> A Chrome extension that helps you quickly clear various types of browser storage for the current tab. Super helpful for testing and debugging during development. Inspired by my constant need to clear local storage when working with GDPR compliance, consent management, and cookies.
 
-- One-click clearing of all storage types
-- Right-click menu options to selectively clear:
-  - Local Storage
-  - Session Storage
-  - Cookies
-  - Browser Cache
-  - All Storage Types
+<p align="center">
+  <img src="utils/icon.svg" alt="Clear Local Storage Icon" width="128" height="128">
+</p>
 
-## Installation
+## ✨ Features
 
-### From Chrome Web Store  **coming soon**
-1. Visit our [Clear Local Storage extension page](https://chrome.google.com/webstore/detail/[extension-id]) on the Chrome Web Store.
+- 🔄 One-click clearing of all storage types
+- 🖱️ Right-click menu options to selectively clear:
+  - 📦 Local Storage
+  - 🔒 Session Storage
+  - 🍪 Cookies
+  - 💾 Browser Cache
+  - 🧹 All Storage Types
+
+## 🚀 Installation
+
+### From Chrome Web Store  `coming soon`
+1. Visit our [Clear Local Storage extension page](https://chrome.google.com/webstore/detail/[extension-id]) on the Chrome Web Store
 2. Click "Add to Chrome"
 3. Click "Add extension" in the popup
 
@@ -38,14 +46,14 @@ A Chrome extension that helps you quickly clear various types of browser storage
    - Enable "Developer mode" using the toggle in the top right
    - Click "Load unpacked" and select the extension directory
 
-## Development
+## 🛠️ Development
 
-The extension is built using:
-- Manifest V3
-- Chrome Extension APIs
-- JavaScript
-- Jest for testing
-- Includes utility to convert SVG icon to needed PNG sizes
+### Tech Stack
+- ⚡ Manifest V3
+- 🌐 Chrome Extension APIs
+- 💻 JavaScript
+- 🧪 Jest for testing
+- 🎨 SVG to PNG conversion utility
 
 ### Making Changes
 1. Edit the source files as needed
@@ -54,16 +62,15 @@ The extension is built using:
 4. Test in Chrome by reloading the extension
 
 ### Running Tests
-1. Run all tests:
-   ```bash
-   npm test
-   ```
-2. Run tests in watch mode:
-   ```bash
-   npm run test:watch
-   ```
+```bash
+# Run all tests
+npm test
 
-## Project Structure
+# Run tests in watch mode
+npm run test:watch
+```
+
+## 📁 Project Structure
 
 ```
 clearlocal-chrome/
@@ -81,7 +88,7 @@ clearlocal-chrome/
 └── README.md         # Documentation
 ```
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/YourFeature`)
@@ -92,52 +99,52 @@ clearlocal-chrome/
 7. Open a Pull Request
 8. Wait for approval and merge
 
-## License
+## 📄 License
 
-MIT License - see [LICENSE](LICENSE) for details 
+MIT License - see [LICENSE](LICENSE) for details
 
-## To Do
+## 📋 To Do
 
 ### Publish to Chrome Web Store
 
-1. Register as a Chrome Web Store developer:
-   - Visit [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole)
-   - Pay registration fee ($5)
-   - Complete verification
+#### 1. Developer Registration
+- [ ] Visit [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole)
+- [ ] Pay registration fee ($5)
+- [ ] Complete verification
 
-2. Create a production build:
-   ```bash
-   npm run build
-   ```
+#### 2. Build Production Version
+```bash
+npm run build
+```
+- [ ] Generate optimized icons
+- [ ] Create submission zip file
 
-   This will:
-   - Generate optimized icons
-   - Create a zip file for submission
+#### 3. Store Assets
+- [ ] Screenshots of extension in use
+- [ ] Promotional tile images
+- [ ] Detailed description
+- [ ] Privacy policy
 
-3. Create store assets:
-   - TODO: Screenshots extension in use
-   - TODO: Promotional tile images
-   - TODO: Detailed description
-   - TODO: Privacy policy
+#### 4. Required Store Items
+- [ ] Small tile (128x128)
+- [ ] Large tile (440x280)
+- [ ] Screenshots (1280x800 or 640x400)
+- [ ] Detailed description
+- [ ] Privacy policy
 
-4. Required store listing items:
-   - TODO: Small tile (128x128)
-   - TODO: Large tile (440x280)
-   - TODO: At least 1 screenshot (1280x800 or 640x400)
-   - TODO: Detailed description
-   - TODO: Privacy policy
+#### 5. Submit for Review
+1. Go to [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole)
+2. Click "New Item"
+3. Upload zip file
+4. Fill in store listing:
+   - [ ] Description
+   - [ ] Screenshots
+   - [ ] Promotional images
+   - [ ] Category (Productivity)
+   - [ ] Language
+5. Submit for review
 
-5. Submit in Chrome Web Store [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole)
-
-6. Click "New Item"
-
-7. Upload the generated zip file
-
-8. Fill in store listing information:
-   - Detailed description
-   - Screenshots
-   - Promotional images
-   - Category (Productivity)
-   - Language
-
-9. Submit for review
+---
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/KevinOBytes">KevinOBytes</a>
+</p>
