@@ -1,0 +1,28 @@
+{
+  "name": "clearlocal-chrome",
+  "version": "1.0.0",
+  "description": "Chrome extension to clear local storage and other data",
+  "scripts": {
+    "convert-icons": "node utils/convert-icons.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "sharp": "^0.32.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@types/chrome": "^0.0.254",
+    "@types/jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": ["./tests/setup.js"],
+    "moduleFileExtensions": ["js", "json"],
+    "testMatch": ["**/tests/**/*.test.js"],
+    "globals": {
+      "chrome": {}
+    }
+  }
+} 
